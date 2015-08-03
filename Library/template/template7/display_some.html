@@ -1,0 +1,23 @@
+<!DOCTYPE  HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+    <title>The Request And other.</title>
+</head>
+<body>
+    <h1>The Request and other information.</h1>
+    <hr>
+	<table>
+		<tr>
+			<td>Key</td>
+			<td>Value</td>
+		</tr>
+		{% for key, value in values.items %}
+		<tr>
+			<th>{{key}}</th>
+			<th>{{value}}</th>
+		</tr>
+		{% empty %}
+		{% endfor %}
+	</table>
+</body>  
+</html>

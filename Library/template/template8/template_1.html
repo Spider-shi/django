@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "--//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+	<title>template 1</title>
+</head>
+<body>
+	<h1>
+		<p>Template One</p>
+	</h1>
+	
+	<hr>
+	{% for elem in m_list%}
+		<li>{{elem}}</li>
+	{% empty %}
+		<p>Nothing!</p>
+	{% endfor %}
+</body>
+</html>

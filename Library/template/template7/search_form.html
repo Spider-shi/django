@@ -1,0 +1,19 @@
+<!DOCTYPE  HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+<head>
+	<title>Search</title>
+</head>
+<body>
+	{% if errors %}
+		<u1>
+			{% for error in errors %}
+			<li> {{error}}</li>
+			{% endfor%}
+		</u1>
+	{% endif %}
+	<form action="" method="get">
+		<input type="text" name="q">
+		<input type="submit" value="Search">
+	</form>
+</body>
+</html>
